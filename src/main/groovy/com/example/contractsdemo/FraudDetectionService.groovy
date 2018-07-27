@@ -21,6 +21,6 @@ class FraudDetectionService {
 	}
 
 	boolean amountGreaterThanThreshold(FraudCheck fraudCheck) {
-		return (MAX_AMOUNT <=> fraudCheck.getLoanAmount()) < 0
+		return (MAX_AMOUNT <=> fraudCheck.loanAmount) < 0
 	}
 }
