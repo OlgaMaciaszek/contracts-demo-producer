@@ -1,4 +1,4 @@
-package contracts
+
 
 import org.springframework.cloud.contract.spec.Contract
 
@@ -7,7 +7,7 @@ Contract.make {
 		method 'PUT'
 		url '/fraudcheck'
 		body(
-				clientPesel: "12345678902",
+				clientId: "12345678902",
 				loanAmount: 123.123
 		)
 		headers {
