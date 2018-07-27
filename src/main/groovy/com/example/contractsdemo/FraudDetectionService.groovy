@@ -14,9 +14,9 @@ class FraudDetectionService {
 	static final BigDecimal MAX_AMOUNT = 5000
 
 	FraudCheckResult verify(FraudCheck fraudCheck) {
-//		if (amountGreaterThanThreshold(fraudCheck)) {
-//			return new FraudCheckResult(FraudCheckStatus.FRAUD, AMOUNT_TOO_HIGH)
-//		}
+		if (amountGreaterThanThreshold(fraudCheck)) {
+			return new FraudCheckResult(FraudCheckStatus.FRAUD, AMOUNT_TOO_HIGH)
+		}
 		return new FraudCheckResult(FraudCheckStatus.OK, NO_REASON)
 	}
 
